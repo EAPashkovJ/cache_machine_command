@@ -1,6 +1,8 @@
+package maitain;
+
 public enum Operations {
 
-    LOGIN, DEPOSIT, WITHDRAW, BALANCE, EXIT;
+    DEPOSIT, WITHDRAW, BALANCE, EXIT;
 
     public static Operations getOperation(Integer i) {
         switch (i) {
