@@ -1,17 +1,23 @@
 package resources;
 
-import java.util.ListResourceBundle;
+import java.util.HashMap;
+import java.util.Map;
 
-public class AllowedCard extends ListResourceBundle {
+/**
+ * List of cards services in bank
+ * implementation on Map<String,String>
+ */
+public class AllowedCard {
 
+   public Map<String, String> BaseOfCards(){
 
-    @Override
-    protected Object[][] getContents() {
-        return new Object[][]{
-                {"55554444333322221111", "5555"},
-                {"12345678912333422123", "1234"},
-                {"43215678910111213145", "4321"}
-        };
-    }
+       Map<String,String> cardHolder = new HashMap<>();
+
+       cardHolder.put("5555444433332222","5555" );
+       cardHolder.put("1234567891233342", "1234");
+       cardHolder.put("5678910111213145", "4321");
+
+       return cardHolder;
+   }
 }
 
