@@ -1,8 +1,11 @@
+package maitain;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Console {
+
+public class ConsoleOutput {
 
     private static BufferedReader readFromConsole =
             new BufferedReader(new InputStreamReader(System.in));
@@ -30,7 +33,8 @@ public class Console {
 
 public static Operations inputPoint(){
         while (true) {
-            writeString("Введите какую оперцаю необходимо выполнить?" + "1- Проверить баланс счета" +
+            writeString("Введите какую оперцаю необходимо выполнить?" +
+                    "1- Проверить баланс счета" +
                     "2- Положить деньги на счет" +
                     "3- Снять деньги со счета" +
                     "4- Завершить обслуживание");
