@@ -50,4 +50,9 @@ public class Carrency {
         else  valuteDenom = valuteDenomCopy;
         return  result;
     }
+
+    public boolean hasCurrency(){
+        return !valuteDenom.isEmpty();
+    }
+
 }
